@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Header from '@/components/Header'
+import Navbar from '@/components/Navbar.jsx'
 
 export default function Home() {
   return (
@@ -11,15 +11,102 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Navbar />
+
+      <header>
+        <h1>Trung Nguyenvo</h1>
+        <h2>Software Engineer ⌨️</h2>
+      </header>
 
       <main className={styles.main}>
-        <h1 className="text-3xl font-bold underline dark:text-orange-600">
-          Hello world!
-        </h1>
+        <section id='bio'>
+          <h2>Bio</h2>
+          <p>
+            I have a BA in Computer Science from OC. My final project in school was to work with a team to develop social-media-like application for a real client. Since graduating I have been trying to stay sharp by solving problems on leetcode and learning new technologies by build projects.
 
+            In my free time I like to find new music, watch critically acclaimed dramas, and I am currently learning how to cook.
+          </p>
+        </section>
 
+        <section id='skills'>
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Next</li>
+            <li>Sass</li>
+            <li>Tailwind</li>
+          </ul>
+        </section>
+
+        <section id='projects'>
+          <div>
+            <h3>
+              Spaced Repetition Manager
+            </h3>
+            <p>
+              Provides a way to manage and schedule review sessions for whatever you are learning.
+            </p>
+            <ul>
+              <li>React</li>
+              <li>Next</li>
+              <li>Sass</li>
+              <li>Prisma</li>
+              <li>PostgreSQL</li>
+              <li>NextAuth</li>
+              <li>ReactQuery</li>
+            </ul>
+            <div>
+              <a href='#'>Github</a>
+              <a href='#'>Live Site</a>
+            </div>
+          </div>
+
+          <div>
+            <h3>
+              Pokemon Booster Pack Simulator
+            </h3>
+            <p>
+              A simulator for opening Pokemon booster packs
+            </p>
+            <ul>
+              <li>React</li>
+              <li>Next</li>
+              <li>Sass</li>
+            </ul>
+            <div>
+              <a href='#'>Github</a>
+              <a href='#'>Live Site</a>
+            </div>
+          </div>
+
+          <div>
+            <h3>
+              Church Management System
+            </h3>
+            <p>
+              A management system that allows users to view a directory, groups & messages.
+            </p>
+            <ul>
+              <li>Vue</li>
+              <li>Bootstrap</li>
+              <li>MySQL</li>
+              <li>Sequelize</li>
+              <li>Node</li>
+              <li>Express</li>
+            </ul>
+            <div>
+              <a href='#'>Github</a>
+            </div>
+          </div>
+        </section>
       </main>
+
+      <footer>
+        <h2>Contact Me</h2>
+        {/* TODO: form here  */}
+      </footer>
 
     </div>
   )
