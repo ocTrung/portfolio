@@ -1,23 +1,23 @@
 export default function Card({ project }) {
   return (
-    <div className='flex flex-wrap justify-between max-w-5xl'>
+    <div className='flex flex-wrap justify-between max-w-7xl'>
       <div className='max-w-[50ch]'>
-        <h3 className='text-xl'>
+        <h3 className='text-xl font-semibold'>
           {project.title}
         </h3>
-        <p className='mt-2'>
+        <p className='mt-1 dark:text-gray-300'>
           {project.description}
         </p>
-        <ul className='flex flex-wrap gap-2'>
+        <ul className='mt-4 flex flex-wrap gap-2'>
           {
             project.technologies.map((tech) => (
-              <li className='border-[1px] border-green-600 px-4 py-[.5]'>
+              <li className='border-[1px] border-green-600 dark:text-gray-300 px-4 py-[.5]'>
                 {tech}
               </li>
             ))
           }
         </ul>
-        <div>
+        <div className='mt-4'>
           <a href='#' className='bg-green-600 text-zinc-50 px-4 py-1 mr-2'>Github</a>
           <a href='#' className='bg-green-600 text-zinc-50 px-4 py-1 mr-2'>Live Site</a>
         </div>

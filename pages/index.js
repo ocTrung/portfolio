@@ -52,17 +52,17 @@ export default function Home() {
     <div className=''>
       <Navbar />
 
-      <div className='grid grid-cols-[minmax(500px,1280px)] justify-center'>
-        <header className='h-[50vh] grid grid-rows-3 pl-10 max-w-screen-2xl'>
+      <header className='grid grid-cols-[minmax(500px,1280px)] justify-center'>
+        <div className='h-[50vh] grid grid-rows-3 pl-10 max-w-screen-2xl'>
           <h1 className='row-start-2 self-end text-4xl font-bold'>Trung Nguyenvo</h1>
           <h2 className='row-start-3 text-2xl'>Software Engineer ⌨️</h2>
-        </header>
-      </div>
+        </div>
+      </header>
 
-      <div className='grid grid-cols-[minmax(500px,1280px)] justify-center bg-zinc-200 dark:bg-gray-800'>
-        <main className=' px-10 py-2 max-w-screen-2xl'>
-          <section id='bio' className='mt-2 w-full md:w-[65ch]'>
-            <h2 className='text-2xl mb-2'>Bio</h2>
+      <main className='grid grid-cols-[minmax(500px,1024px)] justify-center bg-zinc-200 dark:bg-gray-800 min-h-fit'>
+        <div className='px-10 py-2'>
+          <section id='bio' className='mt-2 w-full md:w-[65ch] mb-10'>
+            <h2 className='text-2xl font-bold mb-4'>Bio</h2>
             <p>
               I have a BA in Computer Science from OC. My final project in school was to work with a team to develop social-media-like application for a real client. Since graduating I have been trying to stay sharp by solving problems on leetcode and learning new technologies by build projects.
 
@@ -70,8 +70,8 @@ export default function Home() {
             </p>
           </section>
 
-          <section id='skills' className='mt-6 w-full'>
-            <h2 className='text-2xl mb-2'>Skills</h2>
+          <section id='skills' className='w-full mb-10'>
+            <h2 className='text-2xl font-bold mb-4'>Skills</h2>
             <ul className='flex flex-wrap gap-2'>
               <li className='border-[1px] border-green-600 px-4 py-[.5]'>HTML</li>
               <li className='border-[1px] border-green-600 px-4 py-[.5]'>CSS</li>
@@ -83,7 +83,7 @@ export default function Home() {
           </section>
 
           <section id='projects' className='mt-12'>
-            <h2 className='text-2xl mb-2'>Projects</h2>
+            <h2 className='text-2xl font-bold mb-4'>Projects</h2>
             <div className=''>
               {
                 projectsList.map(project => (
@@ -92,9 +92,9 @@ export default function Home() {
               }
             </div>
           </section>
-        </main>
+        </div>
 
-      </div>
+      </main>
     </div>
   )
 }
