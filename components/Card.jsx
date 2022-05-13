@@ -5,13 +5,13 @@ export default function Card({ project }) {
         <h3 className='text-xl font-semibold'>
           {project.title}
         </h3>
-        <p className='mt-1 dark:text-gray-300'>
+        <p className='mt-1 text-zinc-500 dark:text-gray-300'>
           {project.description}
         </p>
         <ul className='mt-4 flex flex-wrap gap-2'>
           {
             project.technologies.map((tech) => (
-              <li className='border-[1px] border-green-600 dark:text-gray-300 px-4 py-[.5]'>
+              <li className='border-[1px] border-green-600 text-zinc-500 dark:text-gray-300 px-4 py-[.5]'>
                 {tech}
               </li>
             ))
