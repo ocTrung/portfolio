@@ -1,6 +1,6 @@
 export default function Card({ project }) {
   return (
-    <div className='flex flex-wrap justify-between max-w-7xl'>
+    <div className='grid sm:grid-cols-[1fr_auto] gap-8 max-w-7xl mb-8'>
       <div className='max-w-[50ch]'>
         <h3 className='text-xl font-semibold'>
           {project.title}
@@ -26,7 +26,7 @@ export default function Card({ project }) {
         src={project.image}
         alt='screenshot of project'
         width='350'
-        className='object-cover h-80 w-80'
+        className='object-cover h-80 w-80 translate-x-[-1rem]'
       />
     </div>
   )

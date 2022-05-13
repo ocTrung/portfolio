@@ -3,7 +3,7 @@ import Card from '@/components/Card'
 
 const srm = {
   title: 'Spaced Repetition Manager',
-  description: 'Provides a way to manage and schedule review sessions for whatever you are learning.',
+  description: 'A full stack application providing a way to manage and schedule review sessions for whatever you are learning.',
   technologies: [
     'React',
     'Next',
@@ -29,7 +29,7 @@ const pkmn = {
 
 const cmgmt = {
   title: 'Church Management System',
-  description: 'A management system that allows users to view a directory, groups & messages.',
+  description: 'A management system that allows users to view a directory, messages and join groups. Includes admin roles to provide extra privileges .',
   technologies: [
     'Vue',
     'Bootstrap',
@@ -38,7 +38,7 @@ const cmgmt = {
     'Node',
     'Express',
   ],
-  image: 'assets/church-directory-narrow.png'
+  image: 'assets/church-login-narrow.png'
 }
 
 const projectsList = [
@@ -52,14 +52,13 @@ export default function Home() {
     <div className=''>
       <Navbar />
 
-      <header className='grid grid-cols-[minmax(500px,1280px)] justify-center'>
+      <header className='grid grid-cols-[minmax(375px,1280px)] justify-center'>
         <div className='h-[50vh] grid grid-rows-3 pl-10 max-w-screen-2xl'>
-          <h1 className='row-start-2 self-end text-4xl font-bold'>Trung Nguyenvo</h1>
-          <h2 className='row-start-3 text-2xl'>Software Engineer ⌨️</h2>
+          <h1 className='row-start-2 self-end text-6xl font-bold'>Trung Nguyenvo</h1>
+          <h2 className='row-start-3 text-4xl'>Software Engineer ⌨️</h2>
         </div>
       </header>
-
-      <main className='grid grid-cols-[minmax(500px,1024px)] justify-center bg-zinc-200 dark:bg-gray-800 min-h-fit'>
+      <main className='grid grid-cols-[minmax(375px,1024px)] justify-center bg-zinc-200 dark:bg-gray-800 min-h-fit'>
         <div className='px-10 py-2'>
           <section id='bio' className='mt-2 w-full md:w-[65ch] mb-10'>
             <h2 className='text-2xl font-bold mb-4'>Bio</h2>
