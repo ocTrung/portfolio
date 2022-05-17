@@ -5,7 +5,7 @@
       "description": "A full stack application to provide a way to manage and schedule review sessions for whatever you are learning.",
       "technologies": [
         "React",
-        "Next",
+        "NextJS",
         "Sass",
         "Prisma",
         "PostgreSQL",
@@ -20,7 +20,7 @@
       "description": "A simulator for opening Pokemon booster packs.",
       "technologies": [
         "React",
-        "Next",
+        "NextJS",
         "Sass"
       ],
       "image": "assets/booster-opener.png",

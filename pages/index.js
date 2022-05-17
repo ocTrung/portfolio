@@ -20,7 +20,11 @@ export default function Home() {
           <section id='bio' className='mt-2 w-full md:w-[70ch] mb-10'>
             <h2 className='text-2xl font-bold mb-4'>Bio</h2>
             <p>
-              👋 Hey there! My name is Trung. I have a BA in Computer Science from OC. For my final project I worked with a team to develop social-media-like application for a real client. Since graduating I have been working on staying sharp by solving problems on leetcode and learning new technologies by building <a className='text-green-600 underline' href='#projects'>projects</a>.
+              👋 Hey there! My name is Trung. I have a BA in Computer Science from OC. During my last year I worked with a team to develop social-media-like application for a real client.
+            </p>
+            <br></br>
+            <p>
+              Since graduating I have been working on staying sharp by solving problems on leetcode and learning new technologies by building <a className='text-green-600 underline' href='#projects'>projects</a>.
             </p>
             <br></br>
             <p>

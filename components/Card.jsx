@@ -24,7 +24,7 @@ export default function Card({ project }) {
           </a>
           {
             project.url !== '#' &&
-            <a href={project.url} className='bg-green-600 dark:bg-green-600 shadow-xl shadow-green-600/30 dark:shadow-green-600/40 text-zinc-50 px-4 py-1 mr-2 rounded-2xl'>Visit Site</a>
+            <a href={project.url} className='bg-green-600 dark:bg-green-600 shadow-xl shadow-green-600/20 dark:shadow-green-600/40 text-zinc-50 px-4 py-1 mr-2 rounded-2xl'>Visit Site</a>
           }
         </div>
       </div>
