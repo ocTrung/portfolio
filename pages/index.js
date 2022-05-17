@@ -1,65 +1,18 @@
 import Navbar from '@/components/Navbar.jsx'
 import Card from '@/components/Card'
-
-const srm = {
-  title: 'Spaced Repetition Manager',
-  description: 'A full stack application providing a way to manage and schedule review sessions for whatever you are learning.',
-  technologies: [
-    'React',
-    'Next',
-    'Sass',
-    'Prisma',
-    'PostgreSQL',
-    'NextAuth',
-    'ReactQuery'
-  ],
-  image: 'assets/srm-login.png',
-  url: '#'
-}
-
-const pkmn = {
-  title: 'Pokemon Booster Pack Simulator',
-  description: 'A simulator for opening Pokemon booster packs.',
-  technologies: [
-    'React',
-    'Next',
-    'Sass',
-  ],
-  image: 'assets/booster-opener.png',
-  url: 'https://resplendent-speculoos-b976cb.netlify.app/'
-}
-
-const cmgmt = {
-  id: 'wilshire',
-  title: 'Church Management System',
-  description: 'A management system that allows users to view a directory, messages and join groups. Includes admin roles to provide extra privileges.',
-  technologies: [
-    'Vue',
-    'Bootstrap',
-    'MySQL',
-    'Sequelize',
-    'Node',
-    'Express',
-  ],
-  image: 'assets/church-login-narrow.png',
-  url: '#'
-}
-
-const projectsList = [
-  srm,
-  pkmn,
-  cmgmt
-]
+import projects from '@/assets/projects.json'
+import skills from '@/assets/skills.json'
 
 export default function Home() {
   return (
     <div className=''>
       <Navbar />
-
       <header className='grid grid-cols-[minmax(375px,1280px)] justify-center'>
         <div className='h-[50vh] grid grid-rows-3 pl-10 max-w-screen-2xl'>
-          <h1 className='row-start-2 self-end text-6xl font-bold'>Trung Nguyenvo</h1>
-          <h2 className='row-start-3 text-4xl'>Software Engineer ⌨️</h2>
+          <h1 className='row-start-2 self-end text-6xl font-extrabold'>Trung Nguyenvo</h1>
+          <div className='flex row-start-3 items-start gap-1 pt-2'>
+            <h2 className=' text-4xl'>Software Engineer 💻</h2>
+          </div>
         </div>
       </header>
       <main className='grid grid-cols-[minmax(375px,1024px)] justify-center bg-zinc-200 dark:bg-gray-900 min-h-fit'>
@@ -67,25 +20,20 @@ export default function Home() {
           <section id='bio' className='mt-2 w-full md:w-[70ch] mb-10'>
             <h2 className='text-2xl font-bold mb-4'>Bio</h2>
             <p>
-              I have a BA in Computer Science from OC. For my final project I work with a team to develop social-media-like application for a real client. Since graduating I have been trying to stay sharp by solving problems on leetcode and learning new technologies by build <a className='text-green-600 underline' href='#projects'>projects</a>.
-              {/* I have a BA in Computer Science from OC. For my final project I work with a team to develop social-media-like application for a real client <a className='text-green-600 underline' href='#wilshire'>Wilshire App</a>. Since graduating I have been trying to stay sharp by solving problems on leetcode and learning new technologies by build projects. */}
+              👋 Hey there! My name is Trung. I have a BA in Computer Science from OC. For my final project I worked with a team to develop social-media-like application for a real client. Since graduating I have been working on staying sharp by solving problems on leetcode and learning new technologies by building <a className='text-green-600 underline' href='#projects'>projects</a>.
             </p>
             <br></br>
             <p>
-              In my free time I like to find new music, watch critically acclaimed dramas, and I am currently learning how to cook. 🍝
-
+              In my free time I like to find new music, watch critically acclaimed dramas, and I am currently learning how to cook.
             </p>
           </section>
 
           <section id='skills' className='w-full mb-10'>
             <h2 className='text-2xl font-bold mb-4'>Skills</h2>
             <ul className='flex flex-wrap gap-2'>
-              <li className='dark:text-green-600 border-[1px] border-green-600 px-4 py-[.5] rounded-xl'>HTML</li>
-              <li className='dark:text-green-600 border-[1px] border-green-600 px-4 py-[.5] rounded-xl'>CSS</li>
-              <li className='dark:text-green-600 border-[1px] border-green-600 px-4 py-[.5] rounded-xl'>React</li>
-              <li className='dark:text-green-600 border-[1px] border-green-600 px-4 py-[.5] rounded-xl'>Next.js</li>
-              <li className='dark:text-green-600 border-[1px] border-green-600 px-4 py-[.5] rounded-xl'>Sass</li>
-              <li className='dark:text-green-600 border-[1px] border-green-600 px-4 py-[.5] rounded-xl'>Tailwind</li>
+              {skills.data.map(skill => (
+                <li className=' text-green-600 border-[1px] border-green-600  px-4 py-[.5] rounded-xl'>{skill}</li>
+              ))}
             </ul>
           </section>
 
@@ -93,7 +41,7 @@ export default function Home() {
             <h2 className='text-2xl font-bold mb-4'>Projects</h2>
             <div className=''>
               {
-                projectsList.map(project => (
+                projects.data.map(project => (
                   <Card project={project} />
                 ))
               }

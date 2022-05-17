@@ -33,3 +33,4 @@ yarn-error.log*
 
 # assets
 /public/assets
+todo.md

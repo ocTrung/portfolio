@@ -6,13 +6,13 @@ export default function Card({ project }) {
         <h3 className='text-xl font-semibold'>
           {project.title}
         </h3>
-        <p className='mt-1 text-zinc-500 dark:text-gray-300'>
+        <p className='mt-1'>
           {project.description}
         </p>
         <ul className='mt-4 flex flex-wrap gap-2'>
           {
             project.technologies.map((tech) => (
-              <li className='border-[1px] border-green-600 dark:text-green-600 text-zinc-500 px-4 py-[.5] rounded-xl'>
+              <li className='border-[1px] text-green-600 border-[1px] border-green-600 px-4 py-[.5] rounded-xl'>
                 {tech}
               </li>
             ))
@@ -24,7 +24,7 @@ export default function Card({ project }) {
           </a>
           {
             project.url !== '#' &&
-            <a href={project.url} className='bg-green-600 text-zinc-50 px-4 py-1 mr-2 rounded-2xl'>Visit Site</a>
+            <a href={project.url} className='bg-green-600 dark:bg-green-600 shadow-xl shadow-green-600/30 dark:shadow-green-600/40 text-zinc-50 px-4 py-1 mr-2 rounded-2xl'>Visit Site</a>
           }
         </div>
       </div>
