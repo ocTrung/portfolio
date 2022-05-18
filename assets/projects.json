@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "title": "Spaced Repetition Manager",
+      "description": "A full stack application to provide a way to manage and schedule review sessions for whatever you are learning.",
+      "technologies": [
+        "React",
+        "NextJS",
+        "Sass",
+        "Prisma",
+        "PostgreSQL",
+        "NextAuth",
+        "ReactQuery"
+      ],
+      "image": "assets/srm-login.png",
+      "url": "https://spaced-repetition-mgr.vercel.app/",
+      "github": "https://github.com/ocTrung/spaced-repetition-mgr"
+    },
+    {
+      "title": "Pokemon Booster Pack Simulator",
+      "description": "A simulator for opening Pokemon booster packs.",
+      "technologies": [
+        "React",
+        "NextJS",
+        "Sass"
+      ],
+      "image": "assets/booster-opener.png",
+      "url": "https://resplendent-speculoos-b976cb.netlify.app/",
+      "github": "https://github.com/ocTrung/pkmn-booster-sim"
+    },
+    {
+      "id": "wilshire",
+      "title": "Church Management System",
+      "description": "A management system that allows users to view a directory, messages and join groups. Includes admin roles to provide extra privileges.",
+      "technologies": [
+        "Vue",
+        "Bootstrap",
+        "MySQL",
+        "Sequelize",
+        "Node",
+        "Express"
+      ],
+      "image": "assets/church-login-narrow.png",
+      "url": "#",
+      "github": "https://github.com/ocTrung"
+    }
+  ]
+}
