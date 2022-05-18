@@ -15,7 +15,7 @@ export default function Home() {
           </h1>
           <div className='flex row-start-3 items-start gap-1 pt-2'>
             <h2 className='text-4xl'>
-              Software Engineer 💻
+              Software Developer 💻
             </h2>
           </div>
         </div>
