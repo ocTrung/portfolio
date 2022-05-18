@@ -29,7 +29,7 @@ export default function Home() {
             </p>
             <br></br>
             <p>
-              Since graduating I have been working on staying sharp by solving problems on leetcode and learning new technologies by building <a className='text-green-600 underline' href='#projects'>projects</a>.
+              Since graduating I have been learning about web development and new technologies by building <a className='text-green-600 underline' href='#projects'>projects</a>.
             </p>
             <br></br>
             <p>
