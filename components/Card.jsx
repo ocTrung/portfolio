@@ -1,5 +1,4 @@
 export default function Card({ project }) {
-
   return (
     <div id={project?.id} className='grid sm:grid-cols-[1fr_auto] gap-8 max-w-7xl mb-8'>
       <div className='max-w-[50ch]'>
@@ -12,7 +11,7 @@ export default function Card({ project }) {
         <ul className='mt-4 flex flex-wrap gap-2'>
           {
             project.technologies.map((tech) => (
-              <li key={tech} className='border-[1px] text-green-600 border-[1px] border-green-600 px-4 py-[.5] rounded-xl'>
+              <li key={tech} className='text-green-600 border-[1px] border-green-600 px-4 py-[.5] rounded-xl'>
                 {tech}
               </li>
             ))
@@ -32,7 +31,7 @@ export default function Card({ project }) {
         src={project.image}
         alt='screenshot of project'
         width='350'
-        className='object-cover h-80 w-80 translate-x-[-1rem]'
+        className='object-contain sm:h-80 sm:w-80 h-96 w-96 translate-x-[-1rem] p-2'
       />
     </div>
   )
