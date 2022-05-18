@@ -13,7 +13,8 @@
         "ReactQuery"
       ],
       "image": "assets/srm-login.png",
-      "url": "https://spaced-repetition-mgr.vercel.app/"
+      "url": "https://spaced-repetition-mgr.vercel.app/",
+      "github": "https://github.com/ocTrung/spaced-repetition-mgr"
     },
     {
       "title": "Pokemon Booster Pack Simulator",
@@ -24,7 +25,8 @@
         "Sass"
       ],
       "image": "assets/booster-opener.png",
-      "url": "https://resplendent-speculoos-b976cb.netlify.app/"
+      "url": "https://resplendent-speculoos-b976cb.netlify.app/",
+      "github": "https://github.com/ocTrung/pkmn-booster-sim"
     },
     {
       "id": "wilshire",
@@ -39,7 +41,8 @@
         "Express"
       ],
       "image": "assets/church-login-narrow.png",
-      "url": "#"
+      "url": "#",
+      "github": "https://github.com/ocTrung"
     }
   ]
 }

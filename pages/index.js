@@ -36,7 +36,7 @@ export default function Home() {
             <h2 className='text-2xl font-bold mb-4'>Skills</h2>
             <ul className='flex flex-wrap gap-2'>
               {skills.data.map(skill => (
-                <li className='text-green-600 border-[1px] border-green-600  px-4 py-[.5] rounded-xl'>{skill}</li>
+                <li key={skill} className='text-green-600 border-[1px] border-green-600  px-4 py-[.5] rounded-xl'>{skill}</li>
               ))}
             </ul>
           </section>
@@ -57,31 +57,31 @@ export default function Home() {
         <div className='px-10'>
           <h2 className='text-2xl font-bold mt-4 mb-2'>Contact Me</h2>
           <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
+            name='contact'
+            method='POST'
+            data-netlify='true'
             className=''
           >
             <div className=''>
               <label className='block' htmlFor='name'>Your Name: </label>
-              <input className="rounded-lg p-1 dark:bg-gray-700 w-9/12 sm:w-1/3" type="text" name="name" id="name" />
+              <input className='rounded-lg p-1 dark:bg-gray-700 w-9/12 sm:w-1/3' type='text' name='name' id='name' />
             </div>
             <div className=''>
               <label className='block' htmlFor='email'>Your Email: </label>
-              <input className="rounded-lg p-1 dark:bg-gray-700 w-9/12 sm:w-1/3" type="email" name="email" id="email" />
+              <input className='rounded-lg p-1 dark:bg-gray-700 w-9/12 sm:w-1/3' type='email' name='email' id='email' />
             </div>
             <div className=''>
               <label className='block ' htmlFor='message'>Message: </label>
               <textarea
-                name="message"
-                id="message"
-                className="sm:w-1/2 sm:h-32 w-full h-24 rounded-lg p-1 dark:bg-gray-700"
+                name='message'
+                id='message'
+                className='sm:w-1/2 sm:h-32 w-full h-24 rounded-lg p-1 dark:bg-gray-700'
               >
               </textarea>
             </div>
             <div>
               <button className='bg-green-600 dark:bg-green-600 shadow-xl shadow-green-600/30 dark:shadow-green-600/40 text-zinc-50 px-4 py-1 my-1 rounded-2xl'
-                type="submit">
+                type='submit'>
                 Send
               </button>
             </div>
