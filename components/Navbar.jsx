@@ -1,12 +1,23 @@
+import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 
 export default function Navbar() {
+  const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
   const handleThemeToggle = () => {
     const updatedTheme = theme === 'light' ? 'dark' : 'light'
     setTheme(updatedTheme)
   }
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
+
   return (
     <nav className='flex flex-nowrap justify-end gap-4 pr-8 pt-2'>
       <a href='#projects' className='underline hover:text-green-600 active:text-green-700'>Projects</a>
