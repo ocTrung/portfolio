@@ -8,9 +8,9 @@ export default function Navbar() {
     setTheme(updatedTheme)
   }
   return (
-    <nav className='flex flex-nowrap justify-end gap-2 pr-8 pt-2'>
-      <a href='#projects'>Projects</a>
-      <a href='#contactMe'>Contact Me</a>
+    <nav className='flex flex-nowrap justify-end gap-4 pr-8 pt-2'>
+      <a href='#projects' className='underline hover:text-green-600 active:text-green-700'>Projects</a>
+      <a href='#contactMe' className='underline hover:text-green-600 active:text-green-700'>Contact Me</a>
       <button onClick={handleThemeToggle}>
         {
           theme === 'light'

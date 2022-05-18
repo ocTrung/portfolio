@@ -1,6 +1,6 @@
 export default function ContactForm() {
   return (
-    <div className='px-10'>
+    <div className='px-6 sm:px-10'>
       <h2 className='text-2xl font-bold mt-4 mb-2'>Contact Me</h2>
       <form name='contact' method='POST' data-netlify='true'>
         <div className=''>
