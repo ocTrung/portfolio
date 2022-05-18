@@ -46,7 +46,7 @@ export default function Home() {
             <div className=''>
               {
                 projects.data.map(project => (
-                  <Card project={project} />
+                  <Card key={project.title} project={project} />
                 ))
               }
             </div>
