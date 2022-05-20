@@ -4,7 +4,7 @@ export default function Success() {
   return (
     <main className='grid h-screen w-screen place-items-center content-center'>
       <h1 className='text-6xl'>Thank You! 💌</h1>
-      <h2 className='text-3xl'>We'll be in touch soon!</h2>
+      <h2 className='text-3xl'>We&apos;ll be in touch soon!</h2>
       <Link href='/'>
         <a
           className='mt-8 flex items-center'
