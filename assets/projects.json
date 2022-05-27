@@ -12,7 +12,7 @@
         "NextAuth",
         "ReactQuery"
       ],
-      "image": "assets/srm-login.png",
+      "image": "assets/srm-login-cropped.png",
       "url": "https://spaced-repetition-mgr.vercel.app/",
       "github": "https://github.com/ocTrung/spaced-repetition-mgr"
     },
@@ -24,7 +24,7 @@
         "NextJS",
         "Sass"
       ],
-      "image": "assets/booster-opener.png",
+      "image": "assets/pokemon-cropped.png",
       "url": "https://pokemonboostersim.netlify.app/",
       "github": "https://github.com/ocTrung/pkmn-booster-sim"
     },
@@ -40,7 +40,7 @@
         "Node",
         "Express"
       ],
-      "image": "assets/church-login-narrow.png",
+      "image": "assets/church-login-cropped.png",
       "url": "#",
       "github": "https://github.com/ocTrung"
     }

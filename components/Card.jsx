@@ -1,6 +1,6 @@
 export default function Card({ project }) {
   return (
-    <div id={project?.id} className='grid sm:grid-cols-[1fr_auto] gap-4 sm:gap-8 mb-8'>
+    <div id={project?.id} className='grid sm:grid-cols-[1fr_auto] gap-4 mb-12'>
       <div className='max-w-[50ch]'>
         <h3 className='text-xl italic'>
           {project.title}
@@ -32,7 +32,6 @@ export default function Card({ project }) {
               <p className='inline ml-1 text-green-600 font-medium text-xl'>Visit site</p>
               <img className='inline w-5' src='arrow-right.svg' alt=''></img>
             </a>
-            // <a href={project.url} className='bg-green-600 dark:bg-green-600 shadow-xl shadow-green-600/20 dark:shadow-green-600/40 text-zinc-50 px-4 py-1 mr-2 rounded-2xl'>Visit Site</a>
           }
         </div>
       </div>
@@ -40,7 +39,7 @@ export default function Card({ project }) {
         src={project.image}
         alt='screenshot of project'
         width='350'
-        className='object-contain sm:h-80 sm:w-80 h-96 w-96 sm:translate-x-[25px]'
+        className='object-cover object-left-top h-auto max-w-[85%] sm:justify-self-end rounded-md shadow-[6px_6px_0px_#d4d4d8] dark:shadow-[6px_6px_0px_#0f172a]'
       />
     </div>
   )
