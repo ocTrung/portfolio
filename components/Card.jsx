@@ -2,7 +2,7 @@ export default function Card({ project }) {
   return (
     <div id={project?.id} className='grid sm:grid-cols-[1fr_auto] gap-8 max-w-7xl mb-8'>
       <div className='max-w-[50ch]'>
-        <h3 className='text-xl font-semibold'>
+        <h3 className='text-xl italic'>
           {project.title}
         </h3>
         <p className='mt-1'>
@@ -11,7 +11,7 @@ export default function Card({ project }) {
         <ul className='mt-4 flex flex-wrap gap-2'>
           {
             project.technologies.map((tech) => (
-              <li key={tech} className='text-green-600 border-[1px] border-green-600 px-4 py-[.5] rounded-xl'>
+              <li key={tech} className='text-green-600 border-[1px] border-green-600 px-4 py-[.5] rounded'>
                 {tech}
               </li>
             ))
@@ -23,7 +23,16 @@ export default function Card({ project }) {
           </a>
           {
             project.url !== '#' &&
-            <a href={project.url} className='bg-green-600 dark:bg-green-600 shadow-xl shadow-green-600/20 dark:shadow-green-600/40 text-zinc-50 px-4 py-1 mr-2 rounded-2xl'>Visit Site</a>
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className='flex items-center gap-[.1em] border-b-2 border-transparent hover:border-green-600 transition-all'
+            >
+              <p className='inline ml-1 text-green-600 font-medium text-xl'>Visit site</p>
+              <img className='inline w-5' src='arrow-right.svg' alt=''></img>
+            </a>
+            // <a href={project.url} className='bg-green-600 dark:bg-green-600 shadow-xl shadow-green-600/20 dark:shadow-green-600/40 text-zinc-50 px-4 py-1 mr-2 rounded-2xl'>Visit Site</a>
           }
         </div>
       </div>
@@ -31,7 +40,7 @@ export default function Card({ project }) {
         src={project.image}
         alt='screenshot of project'
         width='350'
-        className='object-contain sm:h-80 sm:w-80 h-96 w-96 translate-x-[-1rem] p-2'
+        className='object-contain sm:h-80 sm:w-80 h-96 w-96 sm:translate-x-[25px]'
       />
     </div>
   )

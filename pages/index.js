@@ -7,47 +7,42 @@ import skills from '@/assets/skills.json'
 export default function Home() {
   return (
     <div id='mainContainer'>
-      <Navbar />
-      <header className='grid grid-cols-[minmax(375px,1280px)] justify-center'>
-        <div className='h-[50vh] grid grid-rows-3 px-6 sm:px-10 max-w-screen-2xl'>
-          <h1 className='row-start-2 self-end text-6xl font-extrabold'>
+      <header className='grid grid-cols-[minmax(375px,85ch)] justify-center px-2'>
+        <Navbar />
+        <div className='pb-10 pt-20'>
+          <h1 className='text-6xl font-bold'>
             Trung Nguyenvo
           </h1>
-          <div className='flex row-start-3 items-start gap-1 pt-2'>
-            <h2 className='text-4xl'>
-              Software Developer 💻
-            </h2>
-          </div>
+          <h2 className='text-4xl mt-1'>
+            Software Developer 👨‍💻
+          </h2>
         </div>
       </header>
-      <main className='grid grid-cols-[minmax(375px,1024px)] justify-center bg-zinc-200 dark:bg-gray-900 min-h-fit'>
-        <div className='px-6 sm:px-10 py-2'>
-          <section id='bio' className='mt-2 w-full md:w-[70ch] mb-10'>
-            <h2 className='text-2xl font-bold mb-4'>Bio</h2>
+      <main className='grid grid-cols-[minmax(375px,85ch)] justify-center bg-zinc-200 dark:bg-slate-900 min-h-fit px-2'>
+        <div className=''>
+          <section id='bio' className='mt-4'>
+            <h2 className='text-xl mb-2 font-bold'>Bio</h2>
             <p>
-              👋 Hey there! My name is Trung. I have a BA in Computer Science from OC. During my last year I worked with a team to develop social-media-like application for a real client.
+              👋 Hey there! My name is Trung. I have a BS in Computer Science from OC. During my last year I worked with a team to develop social-media-like application for a real client.
             </p>
             <br></br>
             <p>
-              Since graduating I have been learning about web development and new technologies by building <a className='text-green-600 underline' href='#projects'>projects</a>.
-            </p>
-            <br></br>
-            <p>
-              In my free time I like to find new music, watch critically acclaimed dramas, and I am currently learning how to cook.
+              I am currently learning about web development and new technologies by building <a className='text-green-600 underline' href='#projects'>projects</a>.
+              In my free time I like to find new music, watch critically acclaimed dramas, and make pasta.
             </p>
           </section>
 
-          <section id='skills' className='w-full mb-10'>
-            <h2 className='text-2xl font-bold mb-4'>Skills</h2>
+          <section id='skills' className='mt-12'>
+            <h2 className='text-xl mb-2 font-bold'>Skills</h2>
             <ul className='flex flex-wrap gap-2'>
               {skills.data.map(skill => (
-                <li key={skill} className='text-green-600 border-[1px] border-green-600  px-4 py-[.5] rounded-xl'>{skill}</li>
+                <li key={skill} className='text-green-600 border-[1px] border-green-600 px-4 py-[.5] rounded'>{skill}</li>
               ))}
             </ul>
           </section>
 
           <section id='projects' className='mt-12'>
-            <h2 className='text-2xl font-bold mb-4'>Projects</h2>
+            <h2 className='text-xl mb-2 font-bold'>Projects</h2>
             <div className=''>
               {
                 projects.data.map(project => (
@@ -58,7 +53,7 @@ export default function Home() {
           </section>
         </div>
       </main>
-      <footer id='contactMe' className='grid border-t-[1px] border-zinc-300 bg-zinc-200 dark:border-gray-700 dark:bg-gray-900 grid-cols-[minmax(375px,1024px)] justify-center content-center py-2 min-h-[60vh]'>
+      <footer id='contactMe' className='grid border-t-[1px] border-zinc-300 bg-zinc-200 dark:border-slate-700 dark:bg-slate-900 grid-cols-[minmax(375px,1024px)] justify-center content-center px-2 min-h-[60vh]'>
         <ContactForm />
       </footer>
     </div>
