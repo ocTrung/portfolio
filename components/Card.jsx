@@ -1,6 +1,6 @@
 export default function Card({ project }) {
   return (
-    <div id={project?.id} className='grid sm:grid-cols-[1fr_auto] gap-8 max-w-7xl mb-8'>
+    <div id={project?.id} className='grid sm:grid-cols-[1fr_auto] gap-4 sm:gap-8 mb-8'>
       <div className='max-w-[50ch]'>
         <h3 className='text-xl italic'>
           {project.title}
