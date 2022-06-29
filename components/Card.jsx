@@ -30,7 +30,7 @@ export default function Card({ project }) {
               className='flex items-center gap-[.1em] border-b-2 border-transparent hover:border-green-700 transition-all group'
             >
               <p className='inline ml-1 text-green-600 group-hover:text-green-700 font-medium text-xl'>Visit site</p>
-              <svg className=' stroke-green-600 group-hover:stroke-green-700' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <svg className='stroke-green-600 group-hover:stroke-green-700 feather feather-arrow-right' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
           }
         </div>
