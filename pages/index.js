@@ -27,8 +27,8 @@ export default function Home() {
             </p>
             <br></br>
             <p>
-              I am currently learning about web development and new technologies by building <a className='text-green-600 underline' href='#projects'>projects</a>.
-              In my free time I like to find new music, watch critically acclaimed dramas, and make pasta.
+              I am currently focused on web development and learning new technologies by building <a className='text-green-600 underline' href='#projects'>projects</a>.
+              In my free time I like to find new music, watch critically acclaimed dramas, and cook 🍝.
             </p>
           </section>
 

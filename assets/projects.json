@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "title": "Spaced Repetition Manager",
+      "title": "Learning Scheduler",
       "description": "A full stack application to provide a way to manage and schedule review sessions for whatever you are learning.",
       "technologies": [
         "React",
@@ -17,8 +17,8 @@
       "github": "https://github.com/ocTrung/spaced-repetition-mgr"
     },
     {
-      "title": "Pokemon Booster Pack Simulator",
-      "description": "A simulator for opening Pokemon booster packs.",
+      "title": "Trading Card Simulator",
+      "description": "A simulator for opening booster packs of the popular Pokemon trading card game. Leveraged Next.js to prefetch data from a 3rd party API to improve page load performance.",
       "technologies": [
         "React",
         "NextJS",
@@ -31,7 +31,7 @@
     {
       "id": "wilshire",
       "title": "Church Management System",
-      "description": "A management system that allows users to view a directory, messages and join groups. Includes admin roles to provide extra privileges.",
+      "description": "A management system that allows users to view a directory of members, messages and join groups. Built with a team using Git.",
       "technologies": [
         "Vue",
         "Bootstrap",
