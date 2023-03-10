@@ -15,11 +15,23 @@ export default function ContactForm() {
 
         <div>
           <label className='block' htmlFor='name'>Your Name: </label>
-          <input className='rounded-lg p-1 dark:bg-slate-700 w-9/12 sm:w-1/3' type='text' name='name' id='name' />
+          <input
+            className='rounded-lg p-1 dark:bg-slate-700 w-9/12 sm:w-1/3'
+            type='text'
+            name='name'
+            id='name'
+            required
+          />
         </div>
         <div>
           <label className='block' htmlFor='email'>Your Email: </label>
-          <input className='rounded-lg p-1 dark:bg-slate-700 w-9/12 sm:w-1/3' type='email' name='email' id='email' />
+          <input
+            className='rounded-lg p-1 dark:bg-slate-700 w-9/12 sm:w-1/3'
+            type='email'
+            name='email'
+            id='email'
+            required
+          />
         </div>
         <div>
           <label className='block ' htmlFor='message'>Message: </label>
@@ -27,6 +39,7 @@ export default function ContactForm() {
             name='message'
             id='message'
             className='sm:w-1/2 sm:h-32 w-full h-24 rounded-lg p-1 dark:bg-slate-700'
+            required
           >
           </textarea>
         </div>
