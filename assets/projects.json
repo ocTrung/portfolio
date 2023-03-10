@@ -25,7 +25,7 @@
         "Sass"
       ],
       "image": "assets/pokemon-cropped.png",
-      "url": "https://pokemonboostersim.netlify.app/",
+      "url": "https://pkmn-booster-sim.vercel.app/",
       "github": "https://github.com/ocTrung/pkmn-booster-sim"
     },
     {
@@ -42,7 +42,7 @@
       ],
       "image": "assets/church-login-cropped.png",
       "url": "#",
-      "github": "https://github.com/ocTrung"
+      "github": "https://github.com/SethKeller/SEVChurchManagementFrontend"
     }
   ]
 }
